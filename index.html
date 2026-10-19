@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta property="og:image" content="https://i.pinimg.com/736x/06/37/bf/0637bf2d47c9e76849a4a6c35c805022.jpg">
+    <meta property="og:title" content="Mybio">
+    <meta property="og:description" content="Esta es una página web para que me conozcais un pcoo y tener las redes algo mas ordenadas :D">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Profile Clone</title>
+    <link rel="icon" href="./imagenes/gengar.jpg?v=2">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="style.css?v=liquid-glass-5">
+</head>
+<body>
+
+<div class="container">
+    <header class="main-card profile-header">
+        <div class="avatar-box">
+            <img src="https://i.pinimg.com/1200x/ab/3f/68/ab3f68f4318c9883493cb2b626985278.jpg" alt="Avatar">
+        </div>
+        <div class="header-main">
+            <h1>Neotz</h1>
+            <p class="status">En línea</p>
+            <div class="bio-bar">↶*ೃ✧˚Autistic↶*ೃ✧˚. ❃ ↷ ˊ-</div>
+        </div>
+        <div class="level-box">
+            <p>Level</p>
+            <div class="level-circle">20</div>
+        </div>
+    </header>
+
+    <div class="content-layout">
+        <div class="left-column">
+            
+            <section class="main-card">
+                <h2 class="title" id="games-heading">Mis videojuegos</h2>
+                <nav class="game-tabs" aria-label="Ordenar y filtrar juegos">
+                    <span class="game-tabs__indicator" aria-hidden="true"></span>
+                    <button class="game-tab is-active" type="button" data-game-filter="recent" aria-pressed="true">Recientes</button>
+                    <button class="game-tab" type="button" data-game-filter="most-played" aria-pressed="false">Más jugados</button>
+                    <button class="game-tab" type="button" data-game-filter="favorites" aria-pressed="false">Favoritos</button>
+                </nav>
+                <div class="games-grid" id="games-grid" aria-label="Juegos recientes"></div>
+                <p class="games-empty" id="games-empty" hidden>Aún no hay juegos marcados como favoritos. En <code>games.js</code>, cambia <code>favorite: false</code> por <code>favorite: true</code> en los juegos que quieras mostrar aquí.</p>
+            </section>
+
+            <section class="main-card posts-section">
+                <h2 class="title">Mis publicaciones</h2>
+                <article class="post-entry">
+                    <div class="posts-grid">
+                        <div class="post-item">
+                            <img src="https://i.pinimg.com/1200x/e8/1f/4b/e81f4b8247ee465410cb8ec5379ff5f9.jpg" alt="Publicación de HTML y CSS">
+                            <div class="post-info"><p>*ੈ✩‧₊˚༺{HTML & CSS}༻*ੈ✩‧₊</p></div>
+                        </div>
+                    </div>
+                    <div class="post-comments">
+                        <h3 class="post-comments__title">Comentarios</h3>
+                        <div class="comment-list">
+                            <div class="comment">
+                                <img class="comment-avatar" src="./imagenes/amigos/bucay.jpg" alt="Foto de Danielman73-dani">
+                                <div class="comment-content">
+                                    <span class="comment-author">Danielman73-dani</span>
+                                    <p class="comment-text">Viste la nueva skin de venu..venture?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PUBLICACIÓN 2: duplica un article.post-entry completo para crear otra publicación. -->
+                <article class="post-entry">
+                    <div class="posts-grid">
+                        <div class="post-item">
+                            <img src="https://i.pinimg.com/1200x/6b/82/06/6b820609956614138b038e7a492712ea.jpg" alt="Publicación decorativa">
+                            <div class="post-info"><p>•┈┈┈••✦ ♡ ✦••┈┈┈•</p></div>
+                        </div>
+                    </div>
+                    <div class="post-comments">
+                        <h3 class="post-comments__title">Comentarios</h3>
+                        <div class="comment-list">
+                            <!-- Añade más comentarios aquí duplicando el bloque .comment de arriba. -->
+                            <div class="comment">
+                                <img class="comment-avatar" src="./imagenes/amigos/briyit.jpg" alt="Foto de briyitt_005">
+                                <div class="comment-content">
+                                    <span class="comment-author">briyitt_005</span>
+                                    <p class="comment-text">Mierdon de época</p>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                     <img class="comment-avatar" src="./imagenes/amigos/Sergio.jpg" alt="Foto de SerGGio_15">
+                               
+                                <div class="comment-content">
+                                    <span class="comment-author">SerGGio_15</span>
+                                    <p class="comment-text">Estoy gordo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <aside class="right-column">
+            <section class="main-card spotify-card">
+                <h2 class="title">Mi playlist</h2>
+                <iframe
+                    class="spotify-embed"
+                    title="Playlist de Spotify de Neotz"
+                    src="https://open.spotify.com/embed/playlist/60o8tmZkF82lqGcKHmV8A1?utm_source=generator&theme=0"
+                    loading="lazy"
+                    height="152"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                </iframe>
+                <a class="spotify-full-link" href="https://open.spotify.com/playlist/60o8tmZkF82lqGcKHmV8A1" target="_blank" rel="noopener noreferrer">Ver playlist completa en Spotify ↗</a>
+            </section>
+
+            <section class="main-card">
+                <h2 class="title">Redes Sociales</h2>
+                <div class="social-grid">
+                    <a href="https://discord.com/users/846462369454489660/" class="social-btn"><span class="bxl--discord-alt"></span></a>
+                    <a href="https://www.instagram.com/neootzz/" class="social-btn"><span class="bxl--instagram"></span></a>
+                    <a href="https://x.com/Neotz_" class="social-btn"><span class="bxl--twitter"></span></a>
+                    <a href="https://open.spotify.com/playlist/3XGZKlaUgfGIjcHx3Rqn1u" class="social-btn"><span class="bxl--spotify"></span></a>
+                </div>
+            </section>
+
+            <section class="main-card">
+                <h2 class="title">Amigos</h2>
+                <ul class="friends-list">
+                    <li><button class="friend-button" type="button" data-friend="danielman73-dani"><span class="dot online"></span><span>Danielman73-dani</span><span class="friend-chevron" aria-hidden="true">›</span></button></li>
+                    <li><button class="friend-button" type="button" data-friend="briyitt_005"><span class="dot online"></span><span>briyitt_005</span><span class="friend-chevron" aria-hidden="true">›</span></button></li>
+                    <li><button class="friend-button" type="button" data-friend="SerGGio_15"><span class="dot offline"></span><span>SerGGio_15</span><span class="friend-chevron" aria-hidden="true">›</span></button></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+</div>
+
+<div class="profile-modal" id="friend-modal" aria-hidden="true">
+    <div class="profile-modal__backdrop" data-close-modal></div>
+    <section class="friend-profile main-card" role="dialog" aria-modal="true" aria-labelledby="friend-profile-name">
+        <button class="profile-close" type="button" aria-label="Cerrar perfil" data-close-modal>×</button>
+        <header class="friend-profile__header">
+            <img class="friend-profile__avatar" id="friend-profile-avatar" src="" alt="">
+            <div class="friend-profile__identity">
+                <p class="friend-profile__eyebrow">PERFIL DE AMIGO</p>
+                <h2 id="friend-profile-name"></h2>
+                <p class="friend-profile__status"><span class="dot" id="friend-profile-dot"></span><span id="friend-profile-status"></span></p>
+            </div>
+        </header>
+        <div class="friend-profile__gallery-head">
+            <div><h3>Galería</h3><p>Comparte tus momentos favoritos</p></div>
+            <label class="video-upload">＋ Añadir vídeos<input id="video-upload-input" type="file" accept="video/*" multiple></label>
+        </div>
+        <div class="video-gallery" id="video-gallery" aria-live="polite"></div>
+        <p class="video-gallery__empty" id="video-gallery-empty">Aún no hay vídeos. Añade alguno desde tu dispositivo.</p>
+    </section>
+</div>
+<div class="game-modal" id="game-modal" aria-hidden="true">
+    <div class="game-modal__backdrop" data-close-game></div>
+    <section class="game-detail main-card" role="dialog" aria-modal="true" aria-labelledby="game-detail-title">
+        <button class="game-detail__close" type="button" aria-label="Cerrar ficha" data-close-game>×</button>
+        <div class="game-detail__layout">
+            <img class="game-detail__cover" id="game-detail-cover" src="" alt="">
+            <div class="game-detail__content">
+                <p class="game-detail__eyebrow">MI BIBLIOTECA</p>
+                <h2 id="game-detail-title"></h2>
+                <p class="game-detail__hours" id="game-detail-hours"></p>
+                <p class="game-detail__last-played" id="game-detail-last-played" hidden></p>
+                <p class="game-detail__note" id="game-detail-note" hidden></p>
+                <a class="game-detail__steam-link" id="game-detail-link" href="#" target="_blank" rel="noopener noreferrer" hidden>Ver y comprar en Steam ↗</a>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="games.js?v=steam-links-4"></script>
+<script src="friends.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
